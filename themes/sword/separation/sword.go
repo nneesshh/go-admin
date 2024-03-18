@@ -8,8 +8,8 @@ import (
 	"github.com/nneesshh/go-admin/template/components"
 	"github.com/nneesshh/go-admin/template/types"
 
-	"bin/themes/common"
-	"bin/themes/sword/resource"
+	"github.com/nneesshh/go-admin/themes/common"
+	"github.com/nneesshh/go-admin/themes/sword/resource"
 )
 
 type Theme struct {
