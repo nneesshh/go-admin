@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/gin"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
-	_ "github.com/nneesshh/themes/sword"
+	_ "github.com/nneesshh/go-admin/themes/sword"
 
 	"github.com/gin-gonic/gin"
 	"github.com/nneesshh/go-admin/engine"
@@ -19,7 +19,7 @@ import (
 	"github.com/nneesshh/go-admin/plugins/example"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
-	"github.com/nneesshh/themes/adminlte"
+	"github.com/nneesshh/go-admin/themes/adminlte"
 )
 
 func main() {

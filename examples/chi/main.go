@@ -20,7 +20,7 @@ import (
 	"github.com/nneesshh/go-admin/plugins/example"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
-	"github.com/nneesshh/themes/adminlte"
+	"github.com/nneesshh/go-admin/themes/adminlte"
 )
 
 func main() {

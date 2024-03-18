@@ -5,7 +5,7 @@ import (
 
 	"github.com/nneesshh/go-admin/modules/config"
 	"github.com/nneesshh/go-admin/plugins/admin/modules/parameter"
-	_ "github.com/nneesshh/themes/sword"
+	_ "github.com/nneesshh/go-admin/themes/sword"
 )
 
 func TestGet(t *testing.T) {

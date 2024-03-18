@@ -6,7 +6,7 @@ import (
 	"github.com/nneesshh/go-admin/modules/config"
 	"github.com/nneesshh/go-admin/modules/language"
 	"github.com/nneesshh/go-admin/plugins/admin/modules/table"
-	"github.com/nneesshh/themes/adminlte"
+	"github.com/nneesshh/go-admin/themes/adminlte"
 
 	// add mysql driver
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
@@ -17,7 +17,7 @@ import (
 	// add mssql driver
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mssql"
 	// add adminlte ui theme
-	_ "github.com/nneesshh/themes/adminlte"
+	_ "github.com/nneesshh/go-admin/themes/adminlte"
 
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"

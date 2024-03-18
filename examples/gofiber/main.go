@@ -8,7 +8,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/gofiber"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
-	_ "github.com/nneesshh/themes/adminlte"
+	_ "github.com/nneesshh/go-admin/themes/adminlte"
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/examples/datamodel"

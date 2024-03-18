@@ -103,7 +103,7 @@ import (
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/plugins/admin"
 	"github.com/nneesshh/go-admin/modules/config"
-	"github.com/nneesshh/themes/adminlte"
+	"github.com/nneesshh/go-admin/themes/adminlte"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
 	"github.com/nneesshh/go-admin/template/types"

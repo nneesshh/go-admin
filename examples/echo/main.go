@@ -8,7 +8,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/echo"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
-	_ "github.com/nneesshh/themes/adminlte"
+	_ "github.com/nneesshh/go-admin/themes/adminlte"
 
 	"github.com/labstack/echo/v4"
 	"github.com/nneesshh/go-admin/engine"

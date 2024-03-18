@@ -9,7 +9,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/gin"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
-	_ "github.com/nneesshh/themes/adminlte"
+	_ "github.com/nneesshh/go-admin/themes/adminlte"
 
 	"github.com/sclevine/agouti"
 )

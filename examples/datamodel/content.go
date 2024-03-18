@@ -8,12 +8,12 @@ import (
 	"github.com/nneesshh/go-admin/template/chartjs"
 	"github.com/nneesshh/go-admin/template/icon"
 	"github.com/nneesshh/go-admin/template/types"
-	"github.com/nneesshh/themes/adminlte/components/chart_legend"
-	"github.com/nneesshh/themes/adminlte/components/description"
-	"github.com/nneesshh/themes/adminlte/components/infobox"
-	"github.com/nneesshh/themes/adminlte/components/productlist"
-	"github.com/nneesshh/themes/adminlte/components/progress_group"
-	"github.com/nneesshh/themes/adminlte/components/smallbox"
+	"github.com/nneesshh/go-admin/themes/adminlte/components/chart_legend"
+	"github.com/nneesshh/go-admin/themes/adminlte/components/description"
+	"github.com/nneesshh/go-admin/themes/adminlte/components/infobox"
+	"github.com/nneesshh/go-admin/themes/adminlte/components/productlist"
+	"github.com/nneesshh/go-admin/themes/adminlte/components/progress_group"
+	"github.com/nneesshh/go-admin/themes/adminlte/components/smallbox"
 )
 
 // GetContent return the content of index page.

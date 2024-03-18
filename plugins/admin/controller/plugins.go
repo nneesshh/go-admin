@@ -19,6 +19,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/nneesshh/go-admin/context"
+	"github.com/nneesshh/go-admin/html"
 	"github.com/nneesshh/go-admin/modules/auth"
 	"github.com/nneesshh/go-admin/modules/language"
 	"github.com/nneesshh/go-admin/modules/remote_server"
@@ -28,7 +29,6 @@ import (
 	template2 "github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/types"
 	"github.com/nneesshh/go-admin/template/types/form"
-	"github.com/nneesshh/html"
 )
 
 func (h *Handler) Plugins(ctx *context.Context) {
