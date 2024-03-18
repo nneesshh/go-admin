@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/GoAdminGroup/go-admin/tests/common"
 	"github.com/gavv/httpexpect"
+	"github.com/nneesshh/go-admin/tests/common"
 )
 
 func TestIris(t *testing.T) {

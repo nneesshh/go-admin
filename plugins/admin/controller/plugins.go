@@ -11,24 +11,24 @@ import (
 	"strings"
 	"time"
 
-	"github.com/GoAdminGroup/go-admin/modules/system"
+	"github.com/nneesshh/go-admin/modules/system"
 
-	"github.com/GoAdminGroup/go-admin/modules/logger"
+	"github.com/nneesshh/go-admin/modules/logger"
 
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/nneesshh/go-admin/modules/config"
 
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/modules/remote_server"
-	"github.com/GoAdminGroup/go-admin/modules/utils"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/guard"
-	template2 "github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
-	"github.com/GoAdminGroup/go-admin/template/types/form"
 	"github.com/GoAdminGroup/html"
 	"github.com/gin-gonic/gin"
+	"github.com/nneesshh/go-admin/context"
+	"github.com/nneesshh/go-admin/modules/auth"
+	"github.com/nneesshh/go-admin/modules/language"
+	"github.com/nneesshh/go-admin/modules/remote_server"
+	"github.com/nneesshh/go-admin/modules/utils"
+	"github.com/nneesshh/go-admin/plugins"
+	"github.com/nneesshh/go-admin/plugins/admin/modules/guard"
+	template2 "github.com/nneesshh/go-admin/template"
+	"github.com/nneesshh/go-admin/template/types"
+	"github.com/nneesshh/go-admin/template/types/form"
 )
 
 func (h *Handler) Plugins(ctx *context.Context) {

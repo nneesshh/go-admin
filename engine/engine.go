@@ -15,28 +15,28 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/GoAdminGroup/go-admin/modules/language"
-	"github.com/GoAdminGroup/go-admin/template/icon"
-	"github.com/GoAdminGroup/go-admin/template/types/action"
+	"github.com/nneesshh/go-admin/modules/language"
+	"github.com/nneesshh/go-admin/template/icon"
+	"github.com/nneesshh/go-admin/template/types/action"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	"github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/modules/auth"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/db"
-	"github.com/GoAdminGroup/go-admin/modules/errors"
-	"github.com/GoAdminGroup/go-admin/modules/logger"
-	"github.com/GoAdminGroup/go-admin/modules/menu"
-	"github.com/GoAdminGroup/go-admin/modules/service"
-	"github.com/GoAdminGroup/go-admin/modules/system"
-	"github.com/GoAdminGroup/go-admin/modules/ui"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/response"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/modules/table"
-	"github.com/GoAdminGroup/go-admin/template"
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/nneesshh/go-admin/adapter"
+	"github.com/nneesshh/go-admin/context"
+	"github.com/nneesshh/go-admin/modules/auth"
+	"github.com/nneesshh/go-admin/modules/config"
+	"github.com/nneesshh/go-admin/modules/db"
+	"github.com/nneesshh/go-admin/modules/errors"
+	"github.com/nneesshh/go-admin/modules/logger"
+	"github.com/nneesshh/go-admin/modules/menu"
+	"github.com/nneesshh/go-admin/modules/service"
+	"github.com/nneesshh/go-admin/modules/system"
+	"github.com/nneesshh/go-admin/modules/ui"
+	"github.com/nneesshh/go-admin/plugins"
+	"github.com/nneesshh/go-admin/plugins/admin"
+	"github.com/nneesshh/go-admin/plugins/admin/models"
+	"github.com/nneesshh/go-admin/plugins/admin/modules/response"
+	"github.com/nneesshh/go-admin/plugins/admin/modules/table"
+	"github.com/nneesshh/go-admin/template"
+	"github.com/nneesshh/go-admin/template/types"
 )
 
 // Engine is the core component of goAdmin. It has two attributes.
@@ -479,15 +479,15 @@ func (eng *Engine) initSiteSetting() {
 
 	// 废弃 site 数据库配置校正
 	/*
-	err := eng.config.Update(models.Site().
-		SetConn(eng.DefaultConnection()).
-		Init(eng.config.ToMap()).
-		AllToMap())
-	if err != nil {
-		logger.Panic(err)
-	}
+		err := eng.config.Update(models.Site().
+			SetConn(eng.DefaultConnection()).
+			Init(eng.config.ToMap()).
+			AllToMap())
+		if err != nil {
+			logger.Panic(err)
+		}
 
-	 */
+	*/
 	eng.Services.Add("config", config.SrvWithConfig(eng.config))
 
 	errors.Init()

@@ -2,7 +2,7 @@ package db
 
 import (
 	"database/sql"
-	"github.com/GoAdminGroup/go-admin/modules/config"
+	"github.com/nneesshh/go-admin/modules/config"
 )
 
 // OceanBase is a Connection of OceanBase.

@@ -7,16 +7,16 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/GoAdminGroup/go-admin/adapter"
-	gctx "github.com/GoAdminGroup/go-admin/context"
-	"github.com/GoAdminGroup/go-admin/engine"
-	"github.com/GoAdminGroup/go-admin/modules/config"
-	"github.com/GoAdminGroup/go-admin/modules/constant"
-	"github.com/GoAdminGroup/go-admin/plugins"
-	"github.com/GoAdminGroup/go-admin/plugins/admin/models"
-	"github.com/GoAdminGroup/go-admin/template/types"
 	"github.com/beego/beego/v2/server/web"
 	"github.com/beego/beego/v2/server/web/context"
+	"github.com/nneesshh/go-admin/adapter"
+	gctx "github.com/nneesshh/go-admin/context"
+	"github.com/nneesshh/go-admin/engine"
+	"github.com/nneesshh/go-admin/modules/config"
+	"github.com/nneesshh/go-admin/modules/constant"
+	"github.com/nneesshh/go-admin/plugins"
+	"github.com/nneesshh/go-admin/plugins/admin/models"
+	"github.com/nneesshh/go-admin/template/types"
 )
 
 type Beego2 struct {

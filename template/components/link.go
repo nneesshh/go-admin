@@ -3,7 +3,7 @@ package components
 import (
 	"html/template"
 
-	"github.com/GoAdminGroup/go-admin/template/types"
+	"github.com/nneesshh/go-admin/template/types"
 )
 
 type LinkAttribute struct {
