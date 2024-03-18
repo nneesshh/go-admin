@@ -115,17 +115,30 @@ func (ctx *Context) Method() string {
 
 // NewContext used in adapter which return a Context with request
 // and slice of UserValue and a default Response.
-func NewContext(req *http.Request) *Context {
+func NewContext() *Context {
 
 	return &Context{
-		Request:   req,
-		UserValue: make(map[string]interface{}),
+		Request:   nil,
 		Response: &http.Response{
 			StatusCode: http.StatusOK,
 			Header:     make(http.Header),
 		},
+		UserValue: make(map[string]interface{}),
 		index: -1,
+		handlers: nil,
 	}
+}
+
+//
+func (ctx *Context)Reset() {
+	ctx.Request = nil
+	ctx.Response = &http.Response{
+		StatusCode: http.StatusOK,
+		Header:     make(http.Header),
+	}
+	ctx.UserValue = make(map[string]interface{})
+	ctx.index = -1
+	ctx.handlers = []Handler{}
 }
 
 const (

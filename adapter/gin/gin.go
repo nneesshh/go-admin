@@ -10,6 +10,7 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
+	"sync"
 
 	"github.com/GoAdminGroup/go-admin/adapter"
 	"github.com/GoAdminGroup/go-admin/context"
@@ -27,10 +28,19 @@ type Gin struct {
 	adapter.BaseAdapter
 	ctx *gin.Context
 	app *gin.Engine
+	pool sync.Pool
 }
 
 func init() {
-	engine.Register(new(Gin))
+	engine.Register(&Gin {
+		ctx: nil,
+		app: nil,
+		pool: sync.Pool{
+			New: func() interface{} {
+				return context.NewContext()
+			},
+		},
+	})
 }
 
 // User implements the method Adapter.User.
@@ -74,7 +84,12 @@ func (gins *Gin) SetApp(app interface{}) error {
 // AddHandler implements the method Adapter.AddHandler.
 func (gins *Gin) AddHandler(method, path string, handlers context.Handlers) {
 	gins.app.Handle(strings.ToUpper(method), path, func(c *gin.Context) {
-		ctx := context.NewContext(c.Request)
+		ctx := gins.pool.Get().(*context.Context)
+		ctx.Request = c.Request
+		defer func() {
+			ctx.Reset()
+			gins.pool.Put(ctx)
+		}()
 
 		for _, param := range c.Params {
 			if c.Request.URL.RawQuery == "" {

@@ -477,6 +477,8 @@ func (eng *Engine) initSiteSetting() {
 
 	printInitMsg(language.Get("initialize configuration"))
 
+	// 废弃 site 数据库配置校正
+	/*
 	err := eng.config.Update(models.Site().
 		SetConn(eng.DefaultConnection()).
 		Init(eng.config.ToMap()).
@@ -484,6 +486,8 @@ func (eng *Engine) initSiteSetting() {
 	if err != nil {
 		logger.Panic(err)
 	}
+
+	 */
 	eng.Services.Add("config", config.SrvWithConfig(eng.config))
 
 	errors.Init()
