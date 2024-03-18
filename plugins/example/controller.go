@@ -3,18 +3,18 @@ package example
 import (
 	"html/template"
 
-	"github.com/GoAdminGroup/themes/adminlte/components/chart_legend"
-	"github.com/GoAdminGroup/themes/adminlte/components/description"
-	"github.com/GoAdminGroup/themes/adminlte/components/infobox"
-	"github.com/GoAdminGroup/themes/adminlte/components/productlist"
-	"github.com/GoAdminGroup/themes/adminlte/components/progress_group"
-	"github.com/GoAdminGroup/themes/adminlte/components/smallbox"
 	"github.com/nneesshh/go-admin/context"
 	"github.com/nneesshh/go-admin/modules/auth"
 	"github.com/nneesshh/go-admin/modules/page"
 	template2 "github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
 	"github.com/nneesshh/go-admin/template/types"
+	"github.com/nneesshh/themes/adminlte/components/chart_legend"
+	"github.com/nneesshh/themes/adminlte/components/description"
+	"github.com/nneesshh/themes/adminlte/components/infobox"
+	"github.com/nneesshh/themes/adminlte/components/productlist"
+	"github.com/nneesshh/themes/adminlte/components/progress_group"
+	"github.com/nneesshh/themes/adminlte/components/smallbox"
 )
 
 func (e *Example) TestHandler(ctx *context.Context) {

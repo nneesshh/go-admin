@@ -13,12 +13,12 @@ import (
 	"github.com/nneesshh/go-admin/examples/datamodel"
 	"github.com/nneesshh/go-admin/modules/config"
 
-	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/nneesshh/go-admin/modules/language"
 	"github.com/nneesshh/go-admin/plugins/example"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
+	"github.com/nneesshh/themes/adminlte"
 )
 
 func main() {

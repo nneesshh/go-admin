@@ -7,11 +7,10 @@ import (
 	"os/signal"
 	"time"
 
-	_ "github.com/GoAdminGroup/themes/sword"
 	_ "github.com/nneesshh/go-admin/adapter/gin"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
+	_ "github.com/nneesshh/themes/sword"
 
-	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/gin-gonic/gin"
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/examples/datamodel"
@@ -20,6 +19,7 @@ import (
 	"github.com/nneesshh/go-admin/plugins/example"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
+	"github.com/nneesshh/themes/adminlte"
 )
 
 func main() {
@@ -75,7 +75,7 @@ func main() {
 	// examplePlugin := plugins.LoadFromPlugin("../datamodel/example.so")
 
 	// customize the login page
-	// example: https://github.com/GoAdminGroup/demo.go-admin.cn/blob/master/main.go#L39
+	// example: https://github.com/nneesshh/demo.go-admin.cn/blob/master/main.go#L39
 	//
 	// template.AddComp("login", datamodel.LoginPage)
 

@@ -6,9 +6,9 @@ import (
 	"os/signal"
 	"time"
 
-	_ "github.com/GoAdminGroup/themes/adminlte"
 	_ "github.com/nneesshh/go-admin/adapter/iris"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
+	_ "github.com/nneesshh/themes/adminlte"
 
 	"github.com/kataras/iris/v12"
 	"github.com/nneesshh/go-admin/engine"
@@ -61,7 +61,7 @@ func main() {
 	// examplePlugin := plugins.LoadFromPlugin("../datamodel/example.so")
 
 	// customize the login page
-	// example: https://github.com/GoAdminGroup/demo.go-admin.cn/blob/master/main.go#L39
+	// example: https://github.com/nneesshh/demo.go-admin.cn/blob/master/main.go#L39
 	//
 	// template.AddComp("login", datamodel.LoginPage)
 

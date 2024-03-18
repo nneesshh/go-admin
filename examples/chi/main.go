@@ -12,7 +12,6 @@ import (
 	_ "github.com/nneesshh/go-admin/adapter/chi"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
 
-	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/go-chi/chi"
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/examples/datamodel"
@@ -21,6 +20,7 @@ import (
 	"github.com/nneesshh/go-admin/plugins/example"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
+	"github.com/nneesshh/themes/adminlte"
 )
 
 func main() {
@@ -65,7 +65,7 @@ func main() {
 	// examplePlugin := plugins.LoadFromPlugin("../datamodel/example.so")
 
 	// customize the login page
-	// example: https://github.com/GoAdminGroup/demo.go-admin.cn/blob/master/main.go#L39
+	// example: https://github.com/nneesshh/demo.go-admin.cn/blob/master/main.go#L39
 	//
 	// template.AddComp("login", datamodel.LoginPage)
 

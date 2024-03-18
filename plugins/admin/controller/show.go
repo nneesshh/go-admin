@@ -13,7 +13,6 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/GoAdminGroup/html"
 	"github.com/nneesshh/go-admin/context"
 	"github.com/nneesshh/go-admin/modules/auth"
 	"github.com/nneesshh/go-admin/modules/errors"
@@ -30,6 +29,7 @@ import (
 	"github.com/nneesshh/go-admin/template/icon"
 	"github.com/nneesshh/go-admin/template/types"
 	"github.com/nneesshh/go-admin/template/types/action"
+	"github.com/nneesshh/html"
 )
 
 // ShowInfo show info page.

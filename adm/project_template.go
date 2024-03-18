@@ -17,7 +17,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/gin"                    // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}" // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                       // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                       // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -97,7 +97,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/beego"                   // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -158,7 +158,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/buffalo"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -224,7 +224,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/chi"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -307,7 +307,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/echo"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -365,7 +365,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/fasthttp"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -426,7 +426,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/gf"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -486,7 +486,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/gorilla"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -546,7 +546,7 @@ import (
 
 	_ "github.com/nneesshh/go-admin/adapter/iris"                 // web framework adapter
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/{{.DriverModule}}"  // sql driver
-	_ "github.com/GoAdminGroup/themes/{{.Theme}}"                        // ui theme
+	_ "github.com/nneesshh/themes/{{.Theme}}"                        // ui theme
 
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/template"
@@ -609,10 +609,10 @@ import (
 	template2 "github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
 	"github.com/nneesshh/go-admin/template/types"
-	"github.com/GoAdminGroup/themes/sword/components/card"
-	"github.com/GoAdminGroup/themes/sword/components/chart_legend"
-	"github.com/GoAdminGroup/themes/sword/components/description"
-	"github.com/GoAdminGroup/themes/sword/components/progress_group"
+	"github.com/nneesshh/themes/sword/components/card"
+	"github.com/nneesshh/themes/sword/components/chart_legend"
+	"github.com/nneesshh/themes/sword/components/description"
+	"github.com/nneesshh/themes/sword/components/progress_group"
 	"html/template"
 )
 
@@ -882,12 +882,12 @@ import (
 	"github.com/nneesshh/go-admin/template/chartjs"
 	"github.com/nneesshh/go-admin/template/icon"
 	"github.com/nneesshh/go-admin/template/types"
-	"github.com/GoAdminGroup/themes/adminlte/components/chart_legend"
-	"github.com/GoAdminGroup/themes/adminlte/components/description"
-	"github.com/GoAdminGroup/themes/adminlte/components/infobox"
-	"github.com/GoAdminGroup/themes/adminlte/components/productlist"
-	"github.com/GoAdminGroup/themes/adminlte/components/progress_group"
-	"github.com/GoAdminGroup/themes/adminlte/components/smallbox"
+	"github.com/nneesshh/themes/adminlte/components/chart_legend"
+	"github.com/nneesshh/themes/adminlte/components/description"
+	"github.com/nneesshh/themes/adminlte/components/infobox"
+	"github.com/nneesshh/themes/adminlte/components/productlist"
+	"github.com/nneesshh/themes/adminlte/components/progress_group"
+	"github.com/nneesshh/themes/adminlte/components/smallbox"
 	"html/template"
 )
 

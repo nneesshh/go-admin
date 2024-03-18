@@ -125,7 +125,7 @@ func replaceContents(fileDir, moduleName, themeName string) {
 			checkError(err)
 			content := string(buf)
 
-			newContent := utils.ReplaceAll(content, "github.com/GoAdminGroup/themes/adminlte", moduleName,
+			newContent := utils.ReplaceAll(content, "github.com/nneesshh/themes/adminlte", moduleName,
 				"adminlte", themeName, "Adminlte", strings.Title(themeName))
 
 			checkError(ioutil.WriteFile(path, []byte(newContent), 0))

@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	_ "github.com/GoAdminGroup/themes/adminlte"
 	_ "github.com/nneesshh/go-admin/adapter/gin"
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
+	_ "github.com/nneesshh/themes/adminlte"
 
 	"github.com/gin-gonic/gin"
 	"github.com/nneesshh/go-admin/engine"

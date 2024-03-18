@@ -23,7 +23,7 @@
 
 GoAdmin 可以帮助你的golang应用快速实现数据可视化，搭建一个数据管理平台。
 
-[文档](http://doc.go-admin.cn/zh) | [论坛](http://discuss.go-admin.com) | [Demo](https://demo.go-admin.cn) | [上手例子](https://github.com/GoAdminGroup/example/blob/master/README_CN.md) | [GoAdmin+vue 例子](https://github.com/GoAdminGroup/goadmin-vue-example)
+[文档](http://doc.go-admin.cn/zh) | [论坛](http://discuss.go-admin.com) | [Demo](https://demo.go-admin.cn) | [上手例子](https://github.com/nneesshh/example/blob/master/README_CN.md) | [GoAdmin+vue 例子](https://github.com/nneesshh/goadmin-vue-example)
 
 
 ![](http://file.go-admin.cn/introduction/interface_3.png)
@@ -37,7 +37,7 @@ GoAdmin 可以帮助你的golang应用快速实现数据可视化，搭建一个
 - ⚙️ **框架支持**: 支持大部分框架接入，让你更容易去上手和扩展
 
 ## 翻译
-我们需要您的帮忙： [https://github.com/GoAdminGroup/docs/issues/1](https://github.com/GoAdminGroup/docs/issues/1)
+我们需要您的帮忙： [https://github.com/nneesshh/docs/issues/1](https://github.com/nneesshh/docs/issues/1)
 
 ## 谁在使用GoAdmin
 
@@ -48,7 +48,7 @@ GoAdmin 可以帮助你的golang应用快速实现数据可视化，搭建一个
 提示：现在你也可以这样做。
 
 ```shell
-$ go install github.com/GoAdminGroup/adm@latest
+$ go install github.com/nneesshh/adm@latest
 $ mkdir new_project && cd new_project
 $ adm init -l cn
 ```
@@ -56,7 +56,7 @@ $ adm init -l cn
 或者：（使用v1.2.16以上的adm）
 
 ```shell
-$ go install github.com/GoAdminGroup/adm@latest
+$ go install github.com/nneesshh/adm@latest
 $ mkdir new_project && cd new_project
 $ adm init web -l cn
 ```
@@ -85,7 +85,7 @@ import (
 	_ "github.com/nneesshh/go-admin/modules/db/drivers/mysql"
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/plugins/admin"
-	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/nneesshh/themes/adminlte"
 	"github.com/nneesshh/go-admin/modules/config"
 	"github.com/nneesshh/go-admin/template"
     	"github.com/nneesshh/go-admin/template/chartjs"
@@ -167,7 +167,7 @@ GO111MODULE=on go run main.go
 
 更多细节详见 [文档说明](http://doc.go-admin.cn/zh)
 
-[这里一个超级简单上手的例子](https://github.com/GoAdminGroup/example)
+[这里一个超级简单上手的例子](https://github.com/nneesshh/example)
 
 ## 贡献
 

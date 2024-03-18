@@ -38,9 +38,9 @@ GoAdmin is a toolkit to help you build a data visualization admin panel for your
 
 Online demo: [https://demo.go-admin.com](https://demo.go-admin.com)
 
-Quick follow up example: [https://github.com/GoAdminGroup/example](https://github.com/GoAdminGroup/example)
+Quick follow up example: [https://github.com/nneesshh/example](https://github.com/nneesshh/example)
 
-GoAdmin+vue example: [https://github.com/GoAdminGroup/goadmin-vue-example](https://github.com/GoAdminGroup/goadmin-vue-example)
+GoAdmin+vue example: [https://github.com/nneesshh/goadmin-vue-example](https://github.com/nneesshh/goadmin-vue-example)
 
 ![interface](http://file.go-admin.cn/introduction/interface_en_3.png)
 
@@ -53,7 +53,7 @@ GoAdmin+vue example: [https://github.com/GoAdminGroup/goadmin-vue-example](https
 - ⚙️ **Frameworks**: support most of the go web frameworks.
 
 ## Translation
-We need your help: [https://github.com/GoAdminGroup/docs/issues/1](https://github.com/GoAdminGroup/docs/issues/1)
+We need your help: [https://github.com/nneesshh/docs/issues/1](https://github.com/nneesshh/docs/issues/1)
 
 ## Who is using
 
@@ -66,7 +66,7 @@ Following three steps to run it.
 Note: now you can quickly start by doing like this.
 
 ```shell
-$ go install github.com/GoAdminGroup/adm@latest
+$ go install github.com/nneesshh/adm@latest
 $ mkdir new_project && cd new_project
 $ adm init
 ```
@@ -75,7 +75,7 @@ Or (use adm whose version higher or equal than v1.2.16)
 
 ```shell
 $ mkdir new_project && cd new_project
-$ go install github.com/GoAdminGroup/adm@latest
+$ go install github.com/nneesshh/adm@latest
 $ adm init web
 ```
 
@@ -103,7 +103,7 @@ import (
 	"github.com/nneesshh/go-admin/engine"
 	"github.com/nneesshh/go-admin/plugins/admin"
 	"github.com/nneesshh/go-admin/modules/config"
-	"github.com/GoAdminGroup/themes/adminlte"
+	"github.com/nneesshh/themes/adminlte"
 	"github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/chartjs"
 	"github.com/nneesshh/go-admin/template/types"
@@ -182,7 +182,7 @@ visit: [http://localhost:9033/admin](http://localhost:9033/admin)
 
 account: admin password: admin
 
-[A super simple example here](https://github.com/GoAdminGroup/example)
+[A super simple example here](https://github.com/nneesshh/example)
 
 See the [docs](https://book.go-admin.cn) for more details.
 

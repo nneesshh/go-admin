@@ -4,7 +4,7 @@ If you want to contribute, but not sure what to do, here's a list of things that
 
 * Translations
     * README.md
-    * [docs](https://github.com/GoAdminGroup/docs/issues/1)
+    * [docs](https://github.com/nneesshh/docs/issues/1)
 * Bug-hunting
 * Finding security problems
 * Themes and Plugins
@@ -13,7 +13,7 @@ See [manual](https://github.com/nneesshh/go-admin/projects/3) for more informati
 
 You can view all open issues on github, which is usually a good starting point if you want to start contributing:
 
-https://github.com/search?q=org%3AGoAdminGroup+is%3Aopen+is%3Aissue+archived%3Afalse&type=Issues
+https://github.com/search?q=org%3Anneesshh+is%3Aopen+is%3Aissue+archived%3Afalse&type=Issues
 
 ## how to
 
