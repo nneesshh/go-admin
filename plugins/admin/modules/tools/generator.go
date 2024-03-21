@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"go/format"
 	"io/ioutil"
+	"os"
 	"path/filepath"
 	"regexp"
 	"strings"
@@ -297,7 +298,7 @@ func GenerateTables(outputPath, packageName string, tables []string, isNew bool)
 		err               error
 	)
 	if fileExist {
-		tablesContentByte, err = ioutil.ReadFile(outputPath + "/tables.go")
+		tablesContentByte, err = os.ReadFile(outputPath + "/tables.go")
 		if err != nil {
 			return err
 		}

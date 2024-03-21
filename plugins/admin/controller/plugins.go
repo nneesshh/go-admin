@@ -463,7 +463,7 @@ func (h *Handler) PluginDownload(ctx *context.Context) {
 	}
 
 	if h.config.BootstrapFilePath != "" && utils.FileExist(h.config.BootstrapFilePath) {
-		content, err := ioutil.ReadFile(h.config.BootstrapFilePath)
+		content, err := os.ReadFile(h.config.BootstrapFilePath)
 		if err != nil {
 			logger.Error("read bootstrap file error: ", err)
 		} else {
@@ -477,7 +477,7 @@ import _ "`+plug.GetInfo().ModulePath+`"`), 0644)
 
 	if h.config.GoModFilePath != "" && utils.FileExist(h.config.GoModFilePath) &&
 		plug.GetInfo().CanUpdate && plug.GetInfo().OldVersion != "" {
-		content, _ := ioutil.ReadFile(h.config.BootstrapFilePath)
+		content, _ := os.ReadFile(h.config.BootstrapFilePath)
 		src := plug.GetInfo().ModulePath + " " + plug.GetInfo().OldVersion
 		dist := plug.GetInfo().ModulePath + " " + plug.GetInfo().Version
 		content = bytes.ReplaceAll(content, []byte(src), []byte(dist))
