@@ -825,6 +825,14 @@ var (
 	initializeLock sync.Mutex
 )
 
+// Get gets the config.
+func Get() *Config {
+	_global.lock.RLock()
+	defer _global.lock.RUnlock()
+
+	return _global.Copy().EraseSens()
+}
+
 // ReadFromJson read the Config from a JSON file.
 func ReadFromJson(path string) Config {
 	jsonByte, err := ioutil.ReadFile(path)
@@ -1018,14 +1026,6 @@ func Prefix() string {
 // PrefixFixSlash return the prefix fix the slash error.
 func PrefixFixSlash() string {
 	return _global.PrefixFixSlash()
-}
-
-// Get gets the config.
-func Get() *Config {
-	_global.lock.RLock()
-	defer _global.lock.RUnlock()
-
-	return _global.Copy().EraseSens()
 }
 
 // Getter methods
