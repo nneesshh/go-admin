@@ -1,13 +1,12 @@
 package sword
 
 import (
+	"embed"
 	"strings"
 
-	"github.com/gobuffalo/packr/v2"
 	adminTemplate "github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/components"
 	"github.com/nneesshh/go-admin/template/types"
-
 	"github.com/nneesshh/go-admin/themes/common"
 	"github.com/nneesshh/go-admin/themes/sword/resource"
 )
@@ -47,10 +46,12 @@ func (t *Theme) GetTmplList() map[string]string {
 	return TemplateList
 }
 
+//go:embed resource/assets/dist
+var fAdminlteResourceAssetsDist embed.FS
+
 func (t *Theme) GetAsset(path string) ([]byte, error) {
-	path = strings.Replace(path, "/assets/dist", "", -1)
-	box := packr.New("sword", "./resource/assets/dist")
-	return box.Find(path)
+	embedPath := strings.ReplaceAll(path, "/assets/dist/", "resource/assets/dist/")
+	return fAdminlteResourceAssetsDist.ReadFile(embedPath)
 }
 
 func (t *Theme) GetAssetList() []string {

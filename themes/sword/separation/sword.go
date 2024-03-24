@@ -7,7 +7,6 @@ import (
 	adminTemplate "github.com/nneesshh/go-admin/template"
 	"github.com/nneesshh/go-admin/template/components"
 	"github.com/nneesshh/go-admin/template/types"
-
 	"github.com/nneesshh/go-admin/themes/common"
 	"github.com/nneesshh/go-admin/themes/sword/resource"
 )
