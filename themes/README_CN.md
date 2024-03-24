@@ -1,7 +1,7 @@
 # GoAdmin 官方主题
 
-- [adminlte](https://github.com/GoAdminGroup/themes/tree/master/adminlte)
-- [sword](https://github.com/GoAdminGroup/themes/tree/master/sword)
+- [adminlte](https://github.com/nneesshh/themes/tree/master/adminlte)
+- [sword](https://github.com/nneesshh/themes/tree/master/sword)
 
 ## 如何使用
 
@@ -14,7 +14,7 @@ package main
 
 import (
 	...
-	_ "github.com/GoAdminGroup/themes/adminlte"
+	_ "github.com/nneesshh/themes/adminlte"
 	...
 )
 
