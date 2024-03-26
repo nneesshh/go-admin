@@ -18,18 +18,25 @@ const (
 	// integer
 	// =================================
 
-	Int       DatabaseType = "INT"
-	Tinyint   DatabaseType = "TINYINT"
-	Mediumint DatabaseType = "MEDIUMINT"
-	Smallint  DatabaseType = "SMALLINT"
-	Bigint    DatabaseType = "BIGINT"
-	Bit       DatabaseType = "BIT"
-	Int8      DatabaseType = "INT8"
-	Int4      DatabaseType = "INT4"
-	Int2      DatabaseType = "INT2"
+	Int        DatabaseType = "INT"
+	UInt       DatabaseType = "UNSIGNED INT"
+	Tinyint    DatabaseType = "TINYINT"
+	UTinyint   DatabaseType = "UNSIGNED TINYINT"
+	Mediumint  DatabaseType = "MEDIUMINT"
+	UMediumint DatabaseType = "UNSIGNED MEDIUMINT"
+	Smallint   DatabaseType = "SMALLINT"
+	USmallint  DatabaseType = "UNSIGNED SMALLINT"
+	Bigint     DatabaseType = "BIGINT"
+	UBigint    DatabaseType = "UNSIGNED BIGINT"
+	Bit        DatabaseType = "BIT"
+	Int8       DatabaseType = "INT8"
+	Int4       DatabaseType = "INT4"
+	Int2       DatabaseType = "INT2"
 
 	Integer     DatabaseType = "INTEGER"
+	UInteger    DatabaseType = "UNSIGNED INTEGER"
 	Numeric     DatabaseType = "NUMERIC"
+	UNumeric    DatabaseType = "UNSIGNED NUMERIC"
 	Smallserial DatabaseType = "SMALLSERIAL"
 	Serial      DatabaseType = "SERIAL"
 	Bigserial   DatabaseType = "BIGSERIAL"
@@ -39,12 +46,16 @@ const (
 	// float
 	// =================================
 
-	Real    DatabaseType = "REAL"
-	Float   DatabaseType = "FLOAT"
-	Float4  DatabaseType = "FLOAT4"
-	Float8  DatabaseType = "FLOAT8"
-	Double  DatabaseType = "DOUBLE"
-	Decimal DatabaseType = "DECIMAL"
+	Real     DatabaseType = "REAL"
+	UReal    DatabaseType = "UNSIGNED REAL"
+	Float    DatabaseType = "FLOAT"
+	UFloat   DatabaseType = "UNSIGNED FLOAT"
+	Float4   DatabaseType = "FLOAT4"
+	Float8   DatabaseType = "FLOAT8"
+	Double   DatabaseType = "DOUBLE"
+	UDouble  DatabaseType = "UNSIGNED DOUBLE"
+	Decimal  DatabaseType = "DECIMAL"
+	UDecimal DatabaseType = "UNSIGNED DECIMAL"
 
 	Doubleprecision DatabaseType = "DOUBLEPRECISION"
 
@@ -150,19 +161,23 @@ var (
 
 	// IntTypeList is a DatabaseType list of integer.
 	IntTypeList = []DatabaseType{Int4, Int2, Int8,
-		Int,
-		Tinyint,
-		Mediumint,
-		Smallint,
+		Int, UInt,
+		Tinyint, UTinyint,
+		Mediumint, UMediumint,
+		Smallint, USmallint,
 		Smallserial, Serial, Bigserial,
-		Integer,
-		Bigint}
+		Integer, UInteger,
+		Bigint, UBigint}
 
 	// FloatTypeList is a DatabaseType list of float.
-	FloatTypeList = []DatabaseType{Float, Float4, Float8, Double, Real, Doubleprecision}
+	FloatTypeList = []DatabaseType{Float, UFloat, Float4, Float8,
+		Double, UDouble,
+		Real, UReal, Doubleprecision}
 
 	// UintTypeList is a DatabaseType list of uint.
-	UintTypeList = []DatabaseType{Decimal, Bit, Money, Numeric}
+	UintTypeList = []DatabaseType{Decimal, UDecimal,
+		Bit, Money,
+		Numeric, UNumeric}
 )
 
 // Contains check the given DatabaseType is in the list or not.

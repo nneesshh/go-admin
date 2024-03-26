@@ -71,6 +71,8 @@ func SetResultValue(result *map[string]interface{}, index string, colVar interfa
 		if colVar2, ok := colVar.(*interface{}); ok {
 			if colVar, ok = (*colVar2).(int64); ok {
 				(*result)[index] = colVar
+			} else if colVar, ok = (*colVar2).(uint64); ok {
+				(*result)[index] = int64(colVar.(uint64))
 			} else if colVar, ok = (*colVar2).(string); ok {
 				(*result)[index] = colVar
 			} else if colVar, ok = (*colVar2).(float64); ok {
