@@ -1629,12 +1629,19 @@ func formTypeOptions() types.FieldOptions {
 
 func databaseTypeOptions() types.FieldOptions {
 	opts := make(types.FieldOptions, len(db.IntTypeList)+
+		len(db.BlobTypeList)+
 		len(db.StringTypeList)+
 		len(db.FloatTypeList)+
 		len(db.UintTypeList)+
 		len(db.BoolTypeList))
 	z := 0
 	for _, t := range db.IntTypeList {
+		text := string(t)
+		v := strings.Title(strings.ToLower(text))
+		opts[z] = types.FieldOption{Text: text, Value: v}
+		z++
+	}
+	for _, t := range db.BlobTypeList {
 		text := string(t)
 		v := strings.Title(strings.ToLower(text))
 		opts[z] = types.FieldOption{Text: text, Value: v}

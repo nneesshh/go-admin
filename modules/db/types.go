@@ -139,6 +139,7 @@ func GetDTAndCheck(s string) DatabaseType {
 		!Contains(ss, IntTypeList) &&
 		!Contains(ss, FloatTypeList) &&
 		!Contains(ss, UintTypeList) &&
+		!Contains(ss, BlobTypeList) &&
 		!Contains(ss, StringTypeList) {
 		panic("wrong type: " + s)
 	}
@@ -146,10 +147,13 @@ func GetDTAndCheck(s string) DatabaseType {
 }
 
 var (
+	// BlobTypeList is a DatabaseType list of binary.
+	BlobTypeList = []DatabaseType{Blob, Tinyblob, Mediumblob, Longblob}
+
 	// StringTypeList is a DatabaseType list of string.
 	StringTypeList = []DatabaseType{Date, Time, Year, Datetime, Timestamptz, Timestamp, Timetz,
 		Varchar, Char, Mediumtext, Longtext, Tinytext,
-		Text, JSON, Blob, Tinyblob, Mediumblob, Longblob,
+		Text, JSON,
 		Interval, Point, Bpchar,
 		Line, Lseg, Box, Path, Polygon, Circle, Cidr, Inet, Macaddr, Character, Varyingcharacter,
 		Nchar, Nativecharacter, Nvarchar, Clob, Binary, Varbinary, Enum, Set, Geometry, Multilinestring,
@@ -223,6 +227,11 @@ func GetValueFromDatabaseType(typ DatabaseType, value interface{}, json bool) Va
 // GetValueFromDatabaseType return Value of given DatabaseType and interface.
 func GetValueFromSQLOfDatabaseType(typ DatabaseType, value interface{}) Value {
 	switch {
+	case Contains(typ, BlobTypeList):
+		if v, ok := value.([]byte); ok {
+			return Value(string(v))
+		}
+		return ""
 	case Contains(typ, StringTypeList):
 		if v, ok := value.(string); ok {
 			return Value(v)
@@ -267,6 +276,11 @@ func GetValueFromSQLOfDatabaseType(typ DatabaseType, value interface{}) Value {
 // GetValueFromJSONOfDatabaseType return Value of given DatabaseType and interface from JSON string value.
 func GetValueFromJSONOfDatabaseType(typ DatabaseType, value interface{}) Value {
 	switch {
+	case Contains(typ, BlobTypeList):
+		if v, ok := value.([]byte); ok {
+			return Value(string(v))
+		}
+		return ""
 	case Contains(typ, StringTypeList):
 		if v, ok := value.(string); ok {
 			return Value(v)

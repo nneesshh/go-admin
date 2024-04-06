@@ -24,6 +24,9 @@ func SetColVarType(colVar *[]interface{}, i int, typeName string) {
 	case Contains(dt, UintTypeList):
 		var s []uint8
 		(*colVar)[i] = &s
+	case Contains(dt, BlobTypeList):
+		var s []byte
+		(*colVar)[i] = &s
 	case Contains(dt, StringTypeList):
 		var s sql.NullString
 		(*colVar)[i] = &s
@@ -60,6 +63,8 @@ func SetResultValue(result *map[string]interface{}, index string, colVar interfa
 		}
 	case Contains(dt, UintTypeList):
 		(*result)[index] = *(colVar.(*[]uint8))
+	case Contains(dt, BlobTypeList):
+		(*result)[index] = *(colVar.(*[]byte))
 	case Contains(dt, StringTypeList):
 		temp := *(colVar.(*sql.NullString))
 		if temp.Valid {
